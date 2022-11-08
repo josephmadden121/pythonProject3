@@ -1,0 +1,39 @@
+# DSC 510
+# Week 11
+# Programming Assignment Week 11
+# Author Joseph Madden
+# 11/07/2022
+# The purpose of this program is to have a loop which allows the user to continue to add items to cart.
+
+# class CashRegister :
+def __init__('self, total = 0.0, items = 0.0)
+    self.total = total
+    self.items - items
+
+def AddItem('self, amount'):
+    'self'.items = 'self'.('items') + 1
+    'self'.total = 'self'.('total') + 'amount'
+def 'GetTotal'(self):
+    return self.total
+def 'GetCount'(self):
+    return self.items
+
+def main():
+    'testtrans' = 'CashRegister'(0,0)
+    while True:
+        try:
+            price = float(input("Please enter the price of your item(s). Enter -1 to quit "))
+            if price > 0:
+                'testtrans'.AddItem(price)
+            elif price < -1:
+                print("Please enter a valid value. Enter the price of your item or -1 to quit")
+        except ValueError:
+            print('Please enter a valid value. Enter the price of your item or -1 to quit')
+        finally:
+            if 'price' == -1:
+                print("Your total cost is :$", round('testtrans'.GetTotal,2))
+                print("Your total items purchased : ",'testtrans'.GetTotal,)
+                break
+
+
+# main()
